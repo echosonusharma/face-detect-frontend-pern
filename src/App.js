@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Particles from 'react-particles-js';
 import FaceRecognition from './components/FaceRecognition/FaceRecognition';
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
@@ -102,6 +102,17 @@ const App = () => {
 
   const [showProfile, setShowProfile] = useState(false);
 
+  //profile
+  const [profile, setProfile] = useState([]);
+
+
+  useEffect(() => {
+    fetch(`https://polar-garden-61408.herokuapp.com/profile/${loadUser.user.id}`)
+      .then(res => res.json())
+      .then(user => setProfile(user));
+  }, [loadUser.user.id]);
+
+
 
 
   return (
@@ -122,7 +133,7 @@ const App = () => {
         isAuth ?
           (
             showProfile ?
-              <Profile setShowProfile={setShowProfile} id={loadUser.user.id} />
+              <Profile setShowProfile={setShowProfile} profile={profile} loadUser={loadUser} />
               :
               <div >
                 <Rank loadUser={loadUser} />
