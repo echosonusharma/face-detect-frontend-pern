@@ -18,13 +18,15 @@ const Navigation = ({ setIsAuth, isAuth, reg, setReg, setImageUrl, setLoadUser, 
         return (
             <nav style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 5%' }}>
                 <Logo />
-                <div style={{ display: 'flex', padding: '0 20px' }}>
+                <div style={{ display: 'flex' }}>
                     <p
                         onClick={(e) => { e.preventDefault(); setShowProfile(true) }}
-                        className='f3 link dim black underline pa3 pointer' >Profile</p>
+                        className='f5 link dim black underline pa3 pointer @media(min-width: 300px) {
+                            f3-ns }' >Profile</p>
                     <p
                         onClick={() => { setIsAuth(false); setImageUrl(''); setLoadUser(users); }}
-                        className='f3 link dim black underline pa3 pointer'>Sign Out</p>
+                        className='f5 link dim black underline pa3 pointer @media(min-width: 300px) {
+                            f3-ns }'>Sign Out</p>
                 </div>
             </nav>
         )
@@ -33,8 +35,10 @@ const Navigation = ({ setIsAuth, isAuth, reg, setReg, setImageUrl, setLoadUser, 
             <nav className='flex justify-end'>
                 {
                     reg ?
-                        <p onClick={() => setReg(false)} className='f3 link dim black underline pa3 pointer'>Sign In</p>
-                        : <p onClick={() => setReg(true)} className='f3 link dim black underline pa3 pointer'> Register</p>
+                        <p onClick={() => setReg(false)} className='f5 link dim black underline pa3 pointer @media(min-width: 300px) {
+                            f3-ns }'>Sign In</p>
+                        : <p onClick={() => setReg(true)} className='f5 link dim black underline pa3 pointer @media(min-width: 300px) {
+                            f3-ns }'> Register</p>
                 }
 
             </nav>
