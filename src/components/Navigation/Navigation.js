@@ -1,5 +1,4 @@
 import React from 'react';
-import './Navigation.css';
 import Logo from '../Logo/Logo';
 
 const users = {
@@ -16,7 +15,7 @@ const Navigation = ({ setIsAuth, isAuth, reg, setReg, setImageUrl, setLoadUser, 
 
     if (isAuth) {
         return (
-            <nav style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 5%' }}>
+            <nav style={{ fontFamily: 'Audiowide', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 5%' }}>
                 <Logo />
                 <div style={{ display: 'flex' }}>
                     <p
@@ -32,7 +31,7 @@ const Navigation = ({ setIsAuth, isAuth, reg, setReg, setImageUrl, setLoadUser, 
         )
     } else {
         return (
-            <nav className='flex justify-end'>
+            <nav className='flex justify-end' style={{ fontFamily: 'Audiowide' }}>
                 {
                     reg ?
                         <p onClick={() => setReg(false)} className='f5 link dim black underline pa3 pointer @media(min-width: 300px) {
