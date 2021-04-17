@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/echosonusharma/face-detect-frontend-pern">
+  <a href="https://face-detect-frontend-pern-echosonusharma.vercel.app">
     <img src="public/brain-ai-logo.svg" alt="Logo" width="100" height="80">
   </a>
 
