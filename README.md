@@ -28,6 +28,10 @@ will scan the image for presence of any human face and will add create a square 
 
 This Project is built using [Create React App](https://create-react-app.dev) and for css it uses [tachyons](https://tachyons.io), a simple took-kit for css.
 
+### Server side
+
+[Face-detect-backend](https://github.com/echosonusharma/face-detect-backend) hosted on heroku
+
 ### Packages
 
 - tachyons
