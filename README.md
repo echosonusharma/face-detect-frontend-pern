@@ -22,7 +22,7 @@
 ## About The Project
 
 FACE-DETECT does what it says, you can add a url which goes to a image and it
-will scan the image for presence of any human face and will add create a square around it.
+will scan the image for presence of any human face and will create a square around it.
 
 ### Built With
 
