@@ -11,7 +11,7 @@
     <a href="https://github.com/echosonusharma/face-detect-frontend-pern"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/echosonusharma/face-detect-frontend-pern">View Demo</a>
+    <a href="https://face-detect-frontend-pern-echosonusharma.vercel.app">View Demo</a>
     ·
     <a href="https://github.com/echosonusharma/face-detect-frontend-pern/issues">Report Bug</a>
   </p>
