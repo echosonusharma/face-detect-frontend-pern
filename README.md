@@ -3,7 +3,7 @@
     <img src="public/brain-ai-logo.svg" alt="Logo" width="100" height="80">
   </a>
 
-  <h2 align="center"><b>FACE-DETECT</b></h2>
+  <h2 align="center"><b>SMART-BRAINS</b></h2>
 
   <p align="center">
    Scan for human heads in a image.

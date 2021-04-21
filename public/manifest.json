@@ -1,6 +1,6 @@
 {
-  "short_name": "face detect",
-  "name": "face-detection-clarifai",
+  "short_name": "SMART-BRAINS",
+  "name": "SMART-BRAINS",
   "icons": [{
       "src": "brain-ai-logo.svg",
       "sizes": "64x64 32x32 24x24 16x16",
